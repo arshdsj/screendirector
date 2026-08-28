@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "ScreenDirector",
+    "slug": "screendirector",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "screendirector",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.arshdsj.screendirector",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "ScreenDirector uses selected photos as local prop avatars and attachments."
+      }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow ScreenDirector to use selected photos in your offline props.",
+          "cameraPermission": false,
+          "microphonePermission": false
+        }
+      ],
+      "expo-status-bar",
+      "expo-audio"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
